@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 
 import { io } from "socket.io-client";
-export const socket = io("https://socket-back.vercel.app/");
+export const socket = io("https://socket-back.vercel.app/", {
+  path: '/socket.io',
+  transports: ['websocket'],
+  secure: true,
+});
 export default function useChat() {
   const [message, setMessage] = useState("");
   const [messagesList, setMessagesList] = useState([]);
