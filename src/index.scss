@@ -1,0 +1,30 @@
+@import "bootstrap/scss/bootstrap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.bg-sended{
+  background-color: rgb(140, 212, 221);
+}
+.bg-received{
+  background-color: rgb(143, 221, 140);
+}
+.ws-bg{
+  min-height: 100vh;
+  background-image: url("./assets/img/wsbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
